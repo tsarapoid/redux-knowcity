@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './Styles/App.css';
 
-import Auth from './components/Auth/AuthContainer';
-import Registration from './components/Registration/RegistrationContainer';
-import Debug from './components/Debug/DebugContainer';
+import Auth from './Auth/AuthContainer';
+import Registration from './Registration/RegistrationContainer';
+import Debug from './Debug/DebugContainer';
 
 export default class App extends React.Component {
   render() {

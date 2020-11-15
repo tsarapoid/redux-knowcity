@@ -2,7 +2,7 @@ import React from 'react';
 import Auth from './Auth';
 import { connect } from 'react-redux';
 
-import { setEmail, setPassword } from '../../store/auth/actions'
+import { setEmail, setPassword } from '../State/auth-reducer'
 
 class AuthContainer extends React.Component {
   render() {
