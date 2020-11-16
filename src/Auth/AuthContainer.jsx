@@ -2,7 +2,7 @@ import React from 'react';
 import Auth from './Auth';
 import { connect } from 'react-redux';
 
-import { setEmail, setPassword } from '../State/auth-reducer'
+import { setEmail, setPassword } from './AuthReducer'
 
 class AuthContainer extends React.Component {
   render() {
@@ -14,8 +14,8 @@ class AuthContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    email: state.auth.email,
-    password: state.auth.password
+    email: state.authorization.email,
+    password: state.authorization.password
   }
 }
 

@@ -20,7 +20,7 @@ export const setRepeatPassword = (password) => ({
 const defaultState = {
   email: '',
   password: '',
-  repeatPassword: ''
+  repeatPassword: '',
 }
 
 export const registrationReducer = (state = defaultState, action) => {

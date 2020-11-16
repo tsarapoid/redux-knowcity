@@ -7,8 +7,8 @@ class Debug extends React.Component {
         <div>
           <b>Auth:</b>
           <ul>
-            <li>Email: {this.props.auth.email}</li>
-            <li>Password: {this.props.auth.password}</li>
+            <li>Email: {this.props.authorization.email}</li>
+            <li>Password: {this.props.authorization.password}</li>
           </ul>
         </div>
         <div>

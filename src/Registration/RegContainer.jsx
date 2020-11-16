@@ -1,8 +1,8 @@
 import React from 'react'
-import Registration from './Registration'
+import Registration from './Reg'
 import { connect } from 'react-redux'
 
-import { setEmail, setPassword, setRepeatPassword } from '../State/reg-reducer'
+import { setEmail, setPassword, setRepeatPassword } from './RegReducer'
 
 class RegistrationContainer extends React.Component {
   render() {

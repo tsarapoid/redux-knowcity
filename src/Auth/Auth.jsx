@@ -38,7 +38,9 @@ export default class Auth extends React.Component {
           </div>
 
           <div>
-            <button>Sign In</button>
+            <button onClick={this.onPasswordChange}>
+							Sign In
+						</button>
           </div>
 
         </form>

@@ -11,7 +11,7 @@ class DebugContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    auth: state.auth,
+    authorization: state.authorization,
     registration: state.registration
   }
 }
