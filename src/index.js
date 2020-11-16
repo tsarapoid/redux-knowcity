@@ -5,15 +5,12 @@ import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import logger from 'redux-logger'
 
-import rootReducer from './Debug/RootReducer'
-
-import './Styles/index.css';
 import App from './App';
+import rootReducer from './RootReducer'
+import './Styles/index.css';
 
-const store = createStore(
-  rootReducer,
-  applyMiddleware(logger)
-)
+
+const store = createStore(rootReducer, applyMiddleware(logger))
 
 ReactDOM.render(
   <React.StrictMode>

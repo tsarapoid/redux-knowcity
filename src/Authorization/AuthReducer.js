@@ -1,5 +1,5 @@
-export const AUTH_CHANGE_EMAIL = 'AUTH_CHANGE_EMAIL'
-export const AUTH_CHANGE_PASSWORD = 'AUTH_CHANGE_PASSWORD'
+const AUTH_CHANGE_EMAIL = 'AUTH_CHANGE_EMAIL'
+const AUTH_CHANGE_PASSWORD = 'AUTH_CHANGE_PASSWORD'
 
 export const setEmail = (email) => ({
   type: AUTH_CHANGE_EMAIL,
@@ -16,7 +16,7 @@ const defaultState = {
   password: ''
 }
 
-export const authReducer = (state = defaultState, action) => {
+export const authorizationReducer = (state = defaultState, action) => {
   switch (action.type) {
     case AUTH_CHANGE_EMAIL:
       return { ...state, email: action.payload };

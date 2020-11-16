@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Auth extends React.Component {
+export default class Authorization extends React.Component {
 
   onEmailChange = (event) => {
     this.props.setEmail(event.target.value);
