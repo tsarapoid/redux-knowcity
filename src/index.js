@@ -10,8 +10,13 @@ import rootReducer from './RootReducer'
 import './Styles/index.css';
 
 
-const store = createStore(rootReducer, applyMiddleware(logger))
-
+const store = createStore(
+	rootReducer,
+	applyMiddleware(logger))
+/* 
+window.__REDUX_DEVTOOLS_EXTENSION__ &&
+window.__REDUX_DEVTOOLS_EXTENSION__())
+ */
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -20,3 +25,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
+

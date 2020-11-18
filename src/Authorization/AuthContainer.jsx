@@ -14,7 +14,8 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = {
-  setEmail, setPassword
+	setEmail,
+	setPassword,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AuthorizationContainer)
